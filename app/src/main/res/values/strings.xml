@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RevisionApplication</string>
+    <string name="txtBienvenue">Bienvenue : </string>
+    <string name="txtmdp">Votre mot de passe est :</string>
+    <string name="btnrechercher">Rechercher</string>
+    <string name="btn_cnx">Login</string>
+    <string name="btn_remember">Remember</string>
+    <string name="chk_remember">Remember Me</string>
+
+</resources>

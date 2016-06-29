@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="bt.be.revisionapplication.PrefsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+       <EditText
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:inputType="textEmailAddress"
+           android:id="@+id/txt_mail"
+           android:layout_gravity="center_horizontal"
+           android:hint="Enter your email"
+           android:layout_marginBottom="25dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_mdp"
+            android:layout_gravity="center_horizontal"
+            android:hint="Enter your Password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="25dp"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chk_remember"
+            android:text="@string/chk_remember"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="25dp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_cnx"
+                android:text="@string/btn_cnx"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="25dp"
+                android:onClick="savePrefs"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_remember"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/btn_remember"
+                android:onClick="remember"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtV_recap"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
